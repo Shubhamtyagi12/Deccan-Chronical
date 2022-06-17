@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img,p{
+             padding-left: 38%;
+        }
+        div{
+            /* border: 2px solid rgb(61, 58, 58); */
+            width: 85%;
+            margin: auto;
+        }
+        #navbar{
+            display: flex;
+            border: none;
+        }
+        #navbar>div{
+            border: none;
+            font-size: 20px;
+        }
+        .line{
+            border: 1px solid rgb(85, 82, 82);
+            margin-top: 15px;
+        }
+        #navbar:hover{
+            background-color: antiquewhite;
+            cursor: pointer;
+        }
+        .t{
+            display: flex;
+            width: 150%;
+            justify-content:space-between;
+            margin: 20px;
+            margin-bottom: -60px;
+            margin-left: 20px;
+            
+           
+        }
+        .t>div>div{
+            height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+       
+        #stories{
+           
+            display: flex;
+            /* border: 1px solid black; */
+            width: 85%;
+            height: 1500px;
+           
+        }
+        #stories>div{
+            
+            width: 32%;
+            /* border: 1px solid red; */
+            height: 1500px;
+        }
+       .shub{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,500px);
+
+       }
+       .shub>div{
+        width: 100%;
+        height: 500px;
+        /* border: none; */
+       }
+       .tyagi{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,250px);
+        
+       }
+       .tyagi>div{
+        width: 100%;
+        height: 250px;
+        border: none;
+       }
+       .tyagi>div>img{
+        width: 100%;
+        height: 250px;
+        padding-left: 0px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        cursor: pointer;
+        
+        
+       }
+       .tyagi>div+div>div:nth-child(1){
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Open Sans',sans-serif;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        
+
+           }
+        .para>p{
+            width: 100%;
+            margin-left: -25px;
+            padding-left: 0%;
+            margin-top: 5px;
+            text-align: left;
+            cursor: pointer;
+            margin-bottom: 40px;
+            
+        }
+        .ravi{
+            width: 100%;
+            height: 140px;
+            border: none;
+        }
+        .ravi>ul>li{
+            font-family: 'Open Sans',sans-serif;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 18px;
+            cursor: pointer;
+            color: red;
+        
+        }
+        li:hover{
+            background-color: black;
+        }
+        .a{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .modi>img{
+        width: 118%;
+        height: 250px;
+        padding-left: 0px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        cursor: pointer;
+        margin-left: -27px;
+        
+        }
+       .b{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Open Sans',sans-serif;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 30px;
+       }
+       .ravi>ul{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+       }
+       .KCR{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(14,100px);
+        gap: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+       }
+        .KCR>div{
+            /* border: 1px solid gray; */
+            width: 100%;
+            height: 100px;
+            cursor: pointer;
+        }
+        .KCRimg>img{
+            width: 40%;
+            height: 90px;
+            margin-left: -47%;
+        }
+        .KCRP>p{
+            margin-top: -31%;
+            color: rgb(59, 58, 58);
+        }
+        .border{
+            width: 95%;
+            /* border: .1px solid rgb(122, 118, 118); */
+            margin-top: 13%;
+        }
+        .ipl{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(9,150px);
+        gap: 10px;
+        }
+        .ipl>div{
+            /* border: 1px solid gray; */
+            width: 100%;
+            height: 150px;
+            cursor: pointer;
+        }
+        .tshirt{
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            gap: 15px;
+        }
+       .tshirt>div+div>img{
+            width: 90%;
+            height: 120px;
+            margin-left: -30%;
+            padding-left: -50%;
+       }
+       h5{
+        font-size: 15px;
+        font-family:'Open Sans',sans-serif;
+        
+       }
+      h5{
+        margin-top: -30%;
+      }
+      .borderline{
+        border: 2px solid rgb(156, 156, 156);
+        width: 85%;
+        margin-top: 5%;
+      }
+      #cartoon{
+        display: flex;
+        gap: 15px;
+        
+
+      }
+      #cartoon>div{
+        width: 65%;
+        height: 300px;
+        /* border: 1px solid red; */
+      }
+      .cat{
+        display: flex;
+        margin-top: 40px;
+        justify-content: space-between;
+       
+      }
+      .cat>div{
+        width: 50%;
+        height: 70px;
+        /* border: 1px solid gray; */
+        cursor: pointer;
+       
+      }
+      .catshub{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,25px);
+       
+      }
+      .catshub>div{
+        width: 35%;
+       
+       
+      }
+      .BRO{
+        border: 2px solid red;
+        margin-right: 80%;
+        
+       
+      }
+      .c{
+        padding-right: 80%;
+      }
+      .TRO{
+        border: 2px solid red;
+        padding-left: 60px;
+        margin-top: 20px;
+      }
+      #cartoon>div>img{
+            width: 100%;
+            height: 280px;
+            margin-left: -38%;
+            padding-left: -50%;
+            cursor: pointer;
+            
+      }
+      .ab{
+        color: rgb(121, 118, 118);
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      .south{
+        display: grid;
+      }
+      .south>div{
+        font-size: 23px;
+        font-weight: 600;
+        margin-left: 0%;
+        margin-top: 20px;
+        line-height: 2px;
+      }
+      .gh{
+        border: 2px solid red;
+        width: 5%;
+        margin-left: 7.7%;
+      }
+      #south1{
+        display: flex;
+        width: 85%;
+        margin-top: 20px;
+        gap: 20px;
+
+      }
+      #south1>div{
+        
+        height: 300px;
+        justify-content: space-between;
+       
+      }
+      .child{
+        display: grid;
+       
+      }
+      .child>div>img{
+            width: 117%;
+            height: 200px;
+            margin-left: -45%;
+            padding-left: -50%;
+            cursor: pointer;
+          
+      }
+      .child>div+div{
+        font-family: 'Open Sans',sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 13px 18px 0px 18px;
+        margin-top: -10px;
+        border-radius: 0px 0px 10px 10px;
+        cursor: pointer;
+      }
+      #small{
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      #small>div{
+        width: 80%;
+        height: 110px;
+       
+      }
+      .smallimg{
+        display: flex;
+        justify-content: space-between;
+      }
+      .smallimg>div>img{
+            width: 70%;
+            height: 70px;
+            margin-left: -35%;
+            border-radius: 10px 10px 10px 10px;
+      }
+      h6{
+        font-size: 15px;
+        font-family: 'Open Sans',sans-serif;
+        margin-top: 0px;
+      }
+      #enter{
+         height: 350px;
+         width: 85%;
+         border-radius: 20px;
+         background-color: rgb(170, 169, 169);
+         margin-top: 40px;
+         box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+
+      }
+      .inner{
+        display: flex;
+        gap: 25px;
+        margin-top: 20px;
+        width: 100%;
+       
+      }
+      .inner>div{
+        width: 30%;
+        height: 230px;
+        
+      }
+      .innerimg{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,110px);
+      }
+      .innerimg>div{
+        width: 100%;
+        height: 110px;
+        
+      }
+      .innerimg>div>img{
+        width: 100%;
+            height: 180px;
+            margin-left: -38%;
+           
+      }
+      .has>h5{
+        margin-top: 22%;
+        font-family: 'Open Sans',sans-serif;
+        font-weight: 700;
+      }
+
+     
+      
+        
+    </style>
+</head>
+<body>
+    <img src="https://d2u6vujtbrga6l.cloudfront.net/images/logo.png" alt="">
+    <p>Monday,Jun 13,2022 | Last Update:11:10 PM IST</p>
+    <div></div>
+    <div id="navbar">
+        <div>Nation</div>
+        <div>South</div>
+        <div>World</div>
+        <div>Entertainment</div>
+        <!-- <div>Jobs & Education</div> -->
+        <div>Sports</div>
+        <div>Technology</div>
+        <div>Lifestyle</div>
+        <div>Gallery</div>
+        <div>More...</div>
+    </div>
+    <div class="line"></div>
+    <div class="t">
+        <div class="s">
+            <div>TOP STORIES</div>
+            <div></div>
+        </div>
+       <div>
+          <div>MOST POPULAR</div>
+          <div></div>
+       </div>
+       
+    </div>
+   
+    <div id="stories">
+      <div class="shub">
+         <div class="tyagi">
+                <div>
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-mbrh668e4c5hlkkhd8ul33njk5-20220412003743.jpeg" alt="">
+                </div>
+             <div class="a">
+                 <div>
+                    Clarity on 'BRS' likely at TRS state executive committee meeting
+                 </div>
+                 <div class="para">
+                    <p>Party cadre faces many questions over KCR's national party move</p>
+                 </div>
+                 <div class="ravi">
+                      <ul>
+                        <li>TRS NRIs support KCR's move to float Bharata Rashtra Samithi</li>
+                        <li>KCR explores TRS options for Prez polls, discusses launch of national party BRS</li>
+                      </ul>
+                 </div>
+            </div>
+         </div>
+            <div>
+                <div class="modi">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-vvamu62i56hm41i9huubaolko5-20220428004006.jpeg" alt="">
+                </div>
+                <div class="b">
+                    PM Modi directs recruitment of 10 lakh people in next 1.5 years: PMO
+                </div>
+                <div class="para"><p>The direction from Modi came following a review of the status of human resources in all government departments and ministries</p></div>
+            </div>
+            <div class="tyagi">
+                <div>
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-affitcqkm355isuv1pg8jsobg2-20220530010308.jpeg" alt="">
+                </div>
+                <div class="a">
+                    <div>
+                        C-section moms to get Rs 5,000 in Andhra Pradesh                    </div>
+                    <div class="para">
+                       <p>CM Jagan increases aid under YSR Asara scheme by Rs 2,000</p>
+                    </div>
+                    <div class="ravi">
+                         <ul>
+                           <li>CM Jagan for starting registration services at 650 secretariats from Oct. 2</li>
+                           <li>CM Jagan sees strong signs of economic recovery</li>
+                         </ul>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <div class="KCR">
+            <div>
+                <div class="KCRimg">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-s702pclqh4p3l96s4vq358jct0-20220518225637.jpeg" alt="">
+                </div>
+                <div class="KCRP">
+                    <p>KCR may 'skip' Mamata's meet if Congress attends tomorrow</p>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div>
+                <div class="KCRimg">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-9p7sib989iv43l5ik363fav9b7-20210622012328.jpeg" alt="">
+                </div>
+                <div class="KCRP">
+                    <p>Sharad Pawar not in Presidential race: NCP</p>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div>
+                <div class="KCRimg">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-j5mcrus0a32ek6afjl3e8pkrl0-20220614105509.jpeg" alt="">
+                </div>
+                <div class="KCRP">
+                    <p>Youth climbs atop police vehicle, creates panic under infleunce of cannabis in TS</p>
+                 </div>
+                <div class="border"></div>
+            </div>
+            <div>
+                <div class="KCRimg">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-j5mcrus0a32ek6afjl3e8pkrl0-20220614120729.jpeg" alt="">
+                </div>
+                <div class="KCRP">
+                    <p>ED quizzes Rahul Gandhi for second day in National Herald money-laundering case</p>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div>
+                <div class="KCRimg">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-j5mcrus0a32ek6afjl3e8pkrl0-20220614112956.jpeg" alt="">
+                </div>
+                <div class="KCRP">
+                    <p>Prophet remark row: Mangaluru police Commissioner holds talks with Muslim leaders</p>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div>
+                <div class="KCRimg">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-j5mcrus0a32ek6afjl3e8pkrl0-20220614131142.jpeg" alt="">
+                </div>
+                <div class="KCRP">
+                    <p>Congress leaders detained as protests continue for second day</p>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div>
+                <div class="KCRimg">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-j5mcrus0a32ek6afjl3e8pkrl0-20220614122505.jpeg" alt="">
+                </div>
+                <div class="KCRP">
+                    <p>CPI(M) MP writes to DGCA alleging assault on Kerala CM inside flight</p>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div>
+                <div class="KCRimg">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-8i6cov2nia0vn21ol6b5690i60-20220128082206.jpeg" alt="">
+                </div>
+                <div class="KCRP">
+                    <p>Telangana schools reopen after summer vacation, one in three students attends classes</p>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div>
+                <div class="KCRimg">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-s702pclqh4p3l96s4vq358jct0-20220520013330.jpeg" alt="">
+                </div>
+                <div class="KCRP">
+                    <p>Jamiat Ulema-i-Hind moves SC against UP's bulldozer policy</p>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div>
+                <div class="KCRimg">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-kjii3nvuaaha5e6p95pegi65i1-20220606115148.jpeg" alt="">
+                </div>
+                <div class="KCRP">
+                    <p>Nupur Sharma summoned by Kolkata cops to appear on June 20
+                        </p>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div>
+                <div class="KCRimg">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-j5mcrus0a32ek6afjl3e8pkrl0-20220614072857.jpeg" alt="">
+                </div>
+                <div class="KCRP">
+                    <p>TS Congress leaders take to streets as ED grills Rahul</p>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div>
+                <div class="KCRimg">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-cl68ilqpcdhsjg29ujfrm6pae4-20220222000426.jpeg" alt="">
+                </div>
+                <div class="KCRP">
+                    <p>Monsoon enters Telangana, likely to cover state later in week
+                        </p>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div>
+                <div class="KCRimg">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-tj47e1g92nrqnltss63gmcng45-20190126080549.jpeg" alt="">
+                </div>
+                <div class="KCRP">
+                    <p>Vundavalli hails KCR’s move to form national party</p>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div>
+                <div class="KCRimg">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-j5mcrus0a32ek6afjl3e8pkrl0-20220614081806.jpeg" alt="">
+                </div>
+                <div class="KCRP">
+                    <p>Congress allowed to stage protest in Hyderabad</p>
+                </div>
+                <div class="border"></div>
+            </div>
+        </div>
+        <div class="ipl">
+            <div class="tshirt">
+                <div>
+                    <h5>World's largest cricket jersey was made within nine days</h5>
+                </div>
+                <div>
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-b5nq5e0ku3g1nctek2tkqtah67-20220601160558.jpeg" alt="">
+                </div>
+               
+            </div>
+            <div class="tshirt">
+                <div>
+                    <h5>Viral fever with gastro, dengue cases increase in Hyderabad</h5>
+                </div>
+                <div>
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-efb18qerodo9jp7egg2v41otq4-20210607215443.jpeg" alt="">
+                </div>
+               
+            </div>
+            <div class="tshirt">
+                <div>
+                    <h5>AP man donates his retirement funds for SSY scheme, gets PM Modi's pat</h5>
+                </div>
+                <div>
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-affitcqkm355isuv1pg8jsobg2-20220530033206.jpeg" alt="">
+                </div>
+               
+            </div>
+            <div class="tshirt">
+                <div>
+                    <h5>Low blow for alcohol lovers as liquor prices go higher in Telangana</h5>
+                </div>
+                <div>
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-gh6knkudub2ksq1v7mg76isbi6-20170710011908.jpeg" alt="">
+                </div>
+               
+            </div>
+            <div class="tshirt">
+                <div>
+                    <h5>Nation's envy: TS legislators are highest paid in the country</h5>
+                </div>
+                <div>
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0fr7ofu4cef9a2dbis2tuej3p1-20161209024602.jpeg" alt="">
+                </div>
+               
+            </div>
+            <div class="tshirt">
+                <div>
+                    <h5>Experts for study on bee population</h5>
+                </div>
+                <div>
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-jo4gv47qlta9dm26aflc6le3i4-20180816125314.jpeg" alt="">
+                </div>
+               
+            </div>
+            <div class="tshirt">
+                <div>
+                    <h5>
+                        Anand K. Sahay | Will Modi’s balancing act work as world eyes India?</h5>
+                </div>
+                <div>
+                    <img src="https://dc-cdn.s3-ap-southeast-1.amazonaws.com/5594bfe13f17c5ce47707d21e1011f6ce0908258-tc-img-columnists.jpg" alt="">
+                </div>
+               
+            </div>
+            <div class="tshirt">
+                <div>
+                    <h5>Dilip Cherian | Centre eases off on changes in IAS cadre service rules
+                        Dilip Cherian</h5>
+                </div>
+                <div>
+                    <img src="https://dc-cdn.s3-ap-southeast-1.amazonaws.com/2ef59cdce7be3b73484cd7776eecee679d2f5c96-tc-img-columnists.jpg" alt="">
+                </div>
+               
+            </div>
+            <div class="tshirt">
+                <div>
+                    <h5>India-UK ties at 75: Looking back, moving forward
+                        C. Raj Kumar and Amarjit Singh</h5>
+                </div>
+                <div>
+                    <img src="https://www.deccanchronicle.com/images/mugShot.jpeg" alt="">
+                </div>
+               
+            </div>
+           
+        </div>
+    </div>
+    <div class="borderline"></div>
+    <div class="cat">
+        <div class="catshub">
+             <div class="c">CARTOON OF THE DAY</div>
+             <div class="BRO"></div>
+         </div>
+         <div>
+        <div>COUNTER POINT & MOST RECENT NEWS FOR NATIONAL</div>
+        <div class="TRO"></div>
+    </div>
+    </div>
+    <div id="cartoon">
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/14d64906264ee7d4b85c5e28e43757564b2160d3-tc-img-web.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/2719dbcadec930b2bc54462ad717c3cb2dc4922f-tc-img-web.jpg" alt="">
+        </div>
+        <div class="ab">Advertiesment</div>
+    </div>
+    <div class="borderline"></div>
+    <div class="south">
+        <div>South</div>
+        <div class="gh"></div>
+    </div>
+    <div id="south1">
+        <div class="child">
+             <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-q23c7r1vfkgm1plamt1q2pro80-20220211231930.jpeg" alt=""></div>
+             <div>AP to implement 25 per cent quota for poor students in entry-level classes</div>
+             
+        </div>
+        <div class="child">
+            <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0hehs59te2sgl4m2p31ahko2e0-20200718130816.jpeg" alt=""></div>
+            <div>
+                TTD’s decision to issue online tokens for Angapradakshanam draws flak</div>
+            
+       </div>
+       <div class="child">
+        <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-894re1v04r1ga2jhdn4i1gq553-20181206012827.jpeg" alt=""></div>
+        <div>
+            TD cadres mulling use of NOTA to prove party strength in Atmakur</div>
+        
+   </div>
+   <div class="child">
+    <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-qpo6jc16mb3inb5ieefq2rdn24-20220615102843.jpeg" alt=""></div>
+    <div>
+        Central government ready to sanction seaweed parks to AP: Fisheries MoS
+    </div>
+    
+</div>
+        
+    </div>
+    <div id="small">
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-j5mcrus0a32ek6afjl3e8pkrl0-20220614112956.jpeg" alt="">
+            </div>
+            <div>
+                <h6>Prophet remark row: Mangaluru police Commissioner holds talks with Muslim leaders</h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-qpo6jc16mb3inb5ieefq2rdn24-20220615102843.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                    Central government ready to sanction seaweed parks to AP: Fisheries MoS</h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-7v51f0tcgb9j2agi4ej9kagsk3-20190331020123.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                    Hyderabad: Juvenile accused in minor’s gangrape confess crime</h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-j5mcrus0a32ek6afjl3e8pkrl0-20220614122505.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                    CPI(M) MP writes to DGCA alleging assault on Kerala CM inside flight</h6>
+            </div>
+        </div>
+    </div>
+    <div class="borderline"></div>
+    <div class="south">
+        <div>SPORTS</div>
+        <div class="gh"></div>
+    </div>
+    <div id="south1">
+        <div class="child">
+             <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-rminq6lic303n6o6h5727fsro5-20220509000956.jpeg" alt=""></div>
+             <div>
+                Age fraud in sports selection comes down drastically, thanks to technology</div>
+             
+        </div>
+        <div class="child">
+            <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-qm5o5uqvq7aj3matql0sleuu36-20220612113422.jpeg" alt=""></div>
+            <div>
+               
+                Hyderabad's Rahul is chess grandmaster</div>
+            
+       </div>
+       <div class="child">
+        <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-tfvvjg605k774cc039o1ho82t5-20220603234707.jpeg" alt=""></div>
+        <div>
+           
+            Hyderabad set for Formula E debut on February 11 next year</div>
+        
+   </div>
+   <div class="child">
+    <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-henb2g3thqk5r704vk68t75kb1-20211001085338.jpeg" alt=""></div>
+    <div>
+      
+        Dronas get raw deal in gifts
+    </div>
+    
+</div>
+        
+    </div>
+    <div id="small">
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-b5nq5e0ku3g1nctek2tkqtah67-20220601160558.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                    World's largest cricket jersey was made within nine days</h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-rtop1t758f9ta53c6d4fcm6ih4-20220529063915.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                  
+                    A dream come true</h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-03lp42vlmriiupgmaet5opu682-20220522122111.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                   
+                    This is not a small feat, keep it up: PM Modi to Thomas Cup winners</h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0kuoe4sllca81gvnf2data0s30-20220520194235.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                   
+                    Nikhat Zareen’s historic gold enthuses Indian boxing enthusiasts</h6>
+            </div>
+        </div>
+    </div>
+    <div class="borderline"></div>
+    <div id="enter">
+        <div class="south">
+            <div>ENTERTAINMENT</div>
+            <div class="gh"></div>
+        </div>
+        <div class="inner">
+            <div class="innerimg">
+                <div>
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-l970jo2ftej89gr8urqkbd2093-20220329194904.jpeg" alt="">
+                </div>
+                <div class="has">
+                    <h5>Salman Khan denies any threat to life</h5>
+                </div>
+            </div>
+            <div class="innerimg">
+                <div>
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-767hsm5tsvbhpu92u5t5hpout6-20201021154140.jpeg" alt="">
+                </div>
+                <div class="has">
+                    <h5>Ante Sunderaniki is a Light Hearded Drama</h5>
+                </div>
+            </div>
+            <div class="innerimg">
+                <div>
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-rr3g3eqojk0d79epl7ch1jgca3-20220606023535.jpeg" alt="">
+                </div>
+                <div class="has">
+                    <h5>Bitten by the Written bug</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="borderline"></div>
+    <div class="south">
+        <div>LIFESTYLE</div>
+        <div class="gh"></div>
+    </div>
+    <div id="south1">
+        <div class="child">
+             <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-9up0hue5dhvrv4u2qfl75ubpo7-20210710232403.jpeg" alt=""></div>
+             <div>
+               
+                Bonalu not just a festival, it’s purification, say historians</div>
+             
+        </div>
+        <div class="child">
+            <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-r7s8taq5hp0fm1upu432k0g040-20170816083125.jpeg" alt=""></div>
+            <div>
+                
+                Youngsters sleepless in Hyderabad
+              </div>
+            
+       </div>
+       <div class="child">
+        <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-nf91gd4p2081f7hk92grbsg4p3-20190921002020.jpeg" alt=""></div>
+        <div>
+           
+            Listen to your body when it warns you that you’re heading for trouble
+            </div>
+        
+   </div>
+   <div class="child">
+    <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-opfmtb79e99qq2n8q4sjh5aee2-20190514013250.jpeg" alt=""></div>
+    <div>
+        King Koti hospital to use a device to alleviate labour pain
+      
+    </div>
+    
+</div>
+        
+    </div>
+    <div id="small">
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-mobsqce51rrgnvq4733v4m3gn6-20220608073926.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                    
+                    Some fine reading material</h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-8cv5od22mvrk0srpr3f9l98mg1-20220614003929.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                   
+                    Deccan's historian Nayeem passes away
+                    </h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-jsea3jl94darm4h6b8f4mhp542-20220607011850.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                   
+                    A rainbow on my plate</h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-rr3g3eqojk0d79epl7ch1jgca3-20220606021403.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                    Fun with Falafel</h6>
+            </div>
+        </div>
+    </div>
+    <div class="borderline"></div>
+    <div class="south">
+        <div>WORLD</div>
+        <div class="gh"></div>
+    </div>
+    <div id="south1">
+        <div class="child">
+             <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-g8esftggd71s5rmm0p3lflkl10-20220612064214.jpeg" alt=""></div>
+             <div>
+               
+                China is hardening its position along LAC; US Secretary of Defense
+              </div>
+             
+        </div>
+        <div class="child">
+            <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-t1g02g0da4okqabdmppkrung71-20220611115202.jpeg" alt=""></div>
+            <div>
+               
+US lifts COVID-19 test requirement for international travel
+               
+              </div>
+            
+       </div>
+       <div class="child">
+        <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-jgbpi0o0p2ld76muet9tu5gvc5-20220607105000.jpeg" alt=""></div>
+        <div>
+            Boris Johnson wins no-confidence vote: but the margin will make him nervous
+            </div>
+        
+   </div>
+   <div class="child">
+    <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-aavdqqcm0t04ghch753ikskla1-20220326000331.jpeg" alt=""></div>
+    <div>
+        
+        British Prime Minister Boris Johnson to face confidence vote
+      
+    </div>
+    
+</div>
+        
+    </div>
+    <div id="small">
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-f2u39afj17in2npbh6is2loca6-20170718020817.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                    Pakistan's General Musharraf critical in UAE, says ex-minister</h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-o0ggi60qreumqdp7jacrsvg3u1-20220605122644.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                    Amid Imran Khan's assassination rumours, security agencies on high alert in Islamabad
+                    </h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-uv23638o8qnk2smdvvcdj14hr1-20220604124043.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                    Russia may be in Ukraine to stay after 100 days of war</h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-823bir7phfjqh19gf1b31467p2-20220601132030.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                  
+                    Shanghai starts coming back to life as COVID lockdown eases</h6>
+            </div>
+        </div>
+    </div>
+    <div class="borderline"></div>
+    <div class="south">
+        <div>BUSINEES</div>
+        <div class="gh"></div>
+    </div>
+    <div id="south1">
+        <div class="child">
+             <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-qo4lkc94037m2ug36rq5r9q8a6-20200714090115.jpeg" alt=""></div>
+             <div>
+                Food prices help inflation cool down to 7.04% in May
+              </div>
+             
+        </div>
+        <div class="child">
+            <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-g8d99r8ugt58lbifq7jrhbhpd3-20220613060736.jpeg" alt=""></div>
+            <div>
+                Massive Rs 24,000 cr investment for Telangana
+             </div>
+            
+       </div>
+       <div class="child">
+        <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-au7mok02br0m258dgrfuqgmvt0-20200612111912.jpeg" alt=""></div>
+        <div>
+            
+            Rupee plunges to new record low at 77.85, down 11 paise
+            
+            </div>
+        
+   </div>
+   <div class="child">
+    <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-5jqjh7pavs6rav5svvbl59jgq3-20171231080408.jpeg" alt=""></div>
+    <div>
+        Telangana Stamp Duty & Registration Charges Collection Grows Fastest In FY22
+      
+    </div>
+    
+</div>
+        
+    </div>
+    <div id="small">
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-tfvvjg605k774cc039o1ho82t5-20220603224425.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                    RBI hikes repo rate by 50 basis points to 4.9%, EMIs to rise</h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-r2i1b27r3turjmo4kcgti9to53-20200424193520.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                   Soon, no OTP for e-mandates upto Rs 15000 for recurring transactions
+                    </h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-tfvvjg605k774cc039o1ho82t5-20220603224425.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                    Bond yield spikes to 7.5 per cent for first time in three years</h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-qo4lkc94037m2ug36rq5r9q8a6-20200818101456.jpeg" alt="">
+            </div>
+            <div>
+                <h6>Indian GDP grew 8.7% in FY22</h6>
+            </div>
+        </div>
+    </div>
+    <div class="borderline"></div>
+    <div class="south">
+        <div>EDITORS' PICKS</div>
+        <div class="gh"></div>
+    </div>
+    <div id="south1">
+        <div class="child">
+             <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0k9bpt67qg7uuq8cvcj5krvto0-20220613090900.jpeg" alt=""></div>
+             <div>
+               Govt schools across TS in dire straits, poor infra hampering quality education
+              </div>
+             
+        </div>
+        <div class="child">
+            <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-fophas0d0l9fu3em84somap0n1-20180419062047.jpeg" alt=""></div>
+            <div>
+                12-yr-old girl flees after forcible marriage to 35-year-old uncle in TS
+             </div>
+            
+       </div>
+       <div class="child">
+        <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-jo4gv47qlta9dm26aflc6le3i4-20180816125314.jpeg" alt=""></div>
+        <div>
+            Experts for study on bee population  </div>
+        
+   </div>
+   <div class="child">
+    <div><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-tjbmaee6vvttimvhi4drslcvs0-20220503005019.jpeg" alt=""></div>
+    <div>
+        Report: India might turn zoonotic disease hotspot
+      
+    </div>
+    
+</div>
+        
+    </div>
+    <div id="small">
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-v981omqo94ugmfqbfks9qgjt65-20220429115649.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                    Heat wave scorches India's wheat crop, snags export plans</h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-is46rorip9fvjg77epl4p4pte3-20220425135940.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                    Majority of India’s workforce, particularly women, stop looking for jobs
+                    </h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-54psnesbvgd2png432rrskn8q1-20220425064554.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                    Interview | KCR will score historic hat-trick in 2023: KTR</h6>
+            </div>
+        </div>
+        <div class="smallimg">
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-jtj556pgm86qhql4qunegmgap5-20220227231818.jpeg" alt="">
+            </div>
+            <div>
+                <h6>
+                    Disconcerted over PK’s Cong moves, TRS wears mask of nonchalance</h6>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
